@@ -1,0 +1,1 @@
+select * from nm_preno WHERE COD_CONC in(3534,3064,3097,3564) AND COD_TERC > 0

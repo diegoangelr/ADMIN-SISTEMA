@@ -1,0 +1,6 @@
+SELECT P.COD_EMPL, P.COD_CCOS AREA_PRENO , C.COD_AREA AREA_CONTRATOS
+FROM NM_PRENO P
+LEFT JOIN NM_CONTR C ON P.COD_EMPL = C.COD_EMPL AND P.NRO_CONT = C.NRO_CONT
+WHERE P.COD_CCOS <> C.COD_AREA
+
+//Valida area pagadora de la prenomina contra contratos, se corre el ultimo día//
